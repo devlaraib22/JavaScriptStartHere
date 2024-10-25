@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="para">This is para</p>
+<ul>
+    <li class="list">List</li>
+    <li class="list">List 2</li>
+    <li class="list">List</li>
+    <li class="list">List</li>
+    <li class="list">List</li>
+</ul>
+    
+<script >        
+// let para = document.getElementById('para');
+let para = document.querySelector('#para');
+para.innerHTML = "JS Para";
+para.style.backgroundColor = "red";
+para.style.color = "white";
+console.log(para);
+// let lists = document.getElementsByClassName('list');
+let lists = document.querySelectorAll('.list');
+lists.innerHTML = "JS list";
+console.log(lists[1]);
+</script>
+</body>
+</html>
